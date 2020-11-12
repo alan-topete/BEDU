@@ -1,0 +1,29 @@
+{ project: {name: "Greg Powell"} }
+
+
+
+{ project: { $or: [{name: "Greg Powell"}, {name: "Mercedes Tyler"}] } }
+
+
+
+{
+ project: {
+  num_mflix_comments: 1
+ },
+ sort: {
+  num_mflix_comments: -1
+ },
+ limit: 1
+}
+
+
+
+{
+ project: {
+  title: 1
+ },
+ sort: {
+  num_mflix_comments: -1
+ },
+ limit: 5
+}
