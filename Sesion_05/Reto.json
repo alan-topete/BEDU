@@ -1,0 +1,22 @@
+{
+   "filter":{
+      "number_of_reviews":{
+         "$gte":50
+      },
+      "review_scores.review_scores_rating":{
+         "$gte":80
+      },
+      "amenities":{
+         "$in":[
+            "Ethernet connection"
+         ]
+      },
+      "address.country_code":"BR"
+   },
+   "project":{
+      "name":1,
+      "number_of_reviews":1,
+      "review_scores.review_scores_rating":1,
+      "amenities":1
+   }
+}
